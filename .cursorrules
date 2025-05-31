@@ -1,0 +1,52 @@
+# Project Context: Web App for AI Canvas Drawing
+
+## Purpose:
+Build a professional-grade web application using **Vite** + **React** + **Tailwind CSS** where users can draw on a web-based canvas and transform their drawings using AI (OpenAI GPT-Image-1 / DALL·E 3 via API). The app must handle high traffic (10,000+ daily users from day one) and adhere to top-tier standards of scalability, performance, security, and maintainability.
+
+## Core Features:
+- **Drawing Canvas**:
+  - Free drawing (pencil/brush), eraser, shapes (rectangle, circle, line), color picker, fill tool
+  - Advanced: Undo/Redo, load & edit SVGs
+  - Smooth performance, responsive interaction
+
+- **AI Image Transformation**:
+  - Users submit drawing + text prompt (e.g., "Make this a cartoon logo")
+  - AI returns transformed image (preserve layout)
+  - OpenAI GPT-Image-1 (via `images/edits` or `images/generations` endpoints)
+
+- **User System**:
+  - Firebase Authentication (secure login, profiles)
+  - Stripe payments: credit purchases, deduct per AI generation
+
+## Tech Stack:
+- **Frontend**: Vite + React.js (functional components, hooks, modern best practices)
+- **UI Styling**: Tailwind CSS (strict utility-first design, minimal custom CSS)
+- **Canvas Library**: Fabric.js or Konva.js for interactive drawing
+- **Backend**: Firebase (Cloud Functions for API calls, Firestore for data, Storage for images, Authentication for users)
+- **AI API**: OpenAI GPT-Image-1 (DALL·E 3)
+- **Payments**: Stripe
+
+## Development Philosophy:
+- **Professional Grade**: Code must be clean, modular, secure, and ready for production at scale.
+- **KISS Principle**: Keep it simple, avoid over-engineering. Prioritize clarity, maintainability, and performance.
+- **Performance**: Fast load times, optimized assets (via Vite), smooth UX.
+- **Security**: Protect API keys, secure auth flows, data privacy, prevent web vulnerabilities (XSS, CSRF, etc.).
+- **Scalability**: Firebase serverless infrastructure + Vite-optimized frontend.
+- **Documentation**: Every script, folder, and major update must have clear, concise documentation in a central file.
+
+## UI/UX Guidelines (Tailwind CSS):
+- Strictly use Tailwind CSS for all UI elements.
+- Prioritize Tailwind’s responsive, utility-first classes.
+- Consistent spacing, typography, and color schemes via Tailwind’s design system.
+- No custom CSS unless absolutely necessary.
+- Clean, modern, minimalistic design—focus on simplicity and responsiveness.
+
+## AI Prompting Expectations:
+- Provide **step-by-step instructions**, **complete code snippets**, and **clear explanations**.
+- Follow the specified tech stack (Vite, React, Tailwind, Firebase, OpenAI, Stripe) at all times.
+- Prioritize scalability, performance, security, and maintainability.
+- Document reasoning for architectural choices.
+- Suggest optimizations proactively when possible.
+
+## Final Reminder:
+This project is professional-grade, built for high traffic from day one (10,000+ daily users), and must meet top standards in **code quality**, **security**, **scalability**, and **documentation**.
